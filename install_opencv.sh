@@ -28,3 +28,4 @@ make install
 
 pip3 install opencv-python==4.5.1.48
 apt-get update && apt-get install libgl1 -y
+python3 -m pip install pycuda
