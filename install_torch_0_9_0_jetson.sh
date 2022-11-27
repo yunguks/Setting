@@ -24,3 +24,4 @@ cd torchvision
 export BUILD_VERSION=0.9.0
 python3 setup.py install --user
 cd ../ 
+rm -rf torchvision
