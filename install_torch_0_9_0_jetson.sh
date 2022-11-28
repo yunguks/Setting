@@ -3,11 +3,8 @@
 # install torch 1.9
 sudo apt-get install python3-pip libjpeg-dev libopenblas-dev libopenmpi-dev libomp-dev
 sudo -H pip3 install future
-sudo pip3 install -U --user wheel mock pillow
+sudo pip3 install -U --user mock pillow
 sudo -H pip3 install testresources
-
-sudo -H pip3 install setuptools==58.3.0
-sudo -H pip3 install Cython
 
 sudo -H pip3 install gdown
 
@@ -19,9 +16,6 @@ rm torch-1.9.0a0+gitd69c22d-cp36-cp36m-linux_aarch64.whl
 # torch vision
 sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
 
-git clone --branch v0.10.0 https://github.com/pytorch/vision torchvision
-cd torchvision
-export BUILD_VERSION=0.9.0
-python3 setup.py install --user
-cd ../ 
-rm -rf torchvision
+wget https://drive.google.com/uc?id=1tU6YlPjrP605j4z8PMnqwCSoP6sSC91Z
+pip3 install torchvision-0.10.0a0+300a8a4-cp36-cp36m-linux_aarch64.whl
+rm torchvision-0.10.0a0+300a8a4-cp36-cp36m-linux_aarch64.whl
