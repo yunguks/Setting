@@ -2,9 +2,9 @@
 
 
 sudo apt-get install python3-pip protobuf-compiler libprotoc-dev
-pip3 install setuptools==59.6.0
-pip3 install protobuf==3.19.0
-pip3 install numpy==1.19.4
+pip3 install --upgrade setuptools==59.6.0
+pip3 install --upgrade protobuf==3.19.0
+pip3 install --upgrade numpy==1.19.4
 pip3 install Cython
 
 # install pycuda
